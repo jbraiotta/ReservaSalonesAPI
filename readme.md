@@ -21,6 +21,8 @@ Bash
 dotnet run --project ReservaSalones.API
 La API estará disponible en https://localhost:7064.
 
+**Cada vez que se corra el proyecta se genera la base de datos en memoria con 3 salones de ejemplos**
+
 📦 **Estructura del Proyecto**
 
 La solución está organizada en múltiples proyectos para mantener una clara separación de responsabilidades:
@@ -34,6 +36,35 @@ ReservaSalones.Domain: El modelo de dominio. Define las entidades principales (R
 ReservaSalones.Infrastructure: Contiene la capa de acceso a datos (DbContext de Entity Framework Core, repositorios) y servicios externos.
 
 ✅ **Buenas Prácticas y Tecnologías Implementadas**
+
+**Dependencias (NuGet Packages)**
+El proyecto utiliza los siguientes paquetes NuGet para implementar sus funcionalidades y buenas prácticas:
+
+**ReservaSalones.API:**
+
+Swashbuckle.AspNetCore: Para generar y servir la documentación de la API con Swagger/OpenAPI.
+
+**ReservaSalones.Application:**
+
+MediatR: Para implementar el patrón CQRS.
+
+FluentValidation.AspNetCore: Para definir y ejecutar reglas de validación en la capa de la aplicación.
+
+AutoMapper: Para mapear automáticamente entre entidades y DTOs.
+
+**ReservaSalones.Infrastructure:**
+
+Microsoft.EntityFrameworkCore: El ORM utilizado para interactuar con la base de datos.
+
+Microsoft.EntityFrameworkCore.InMemory: Un proveedor de base de datos en memoria, utilizado principalmente para pruebas.
+
+**Proyectos de Pruebas (.Tests):**
+
+xunit: El framework de pruebas unitarias.
+
+Moq: Para crear objetos simulados (mocks) de dependencias, como IMapper.
+
+FluentValidation.TestHelper: Proporciona extensiones útiles para probar validadores de FluentValidation.
 
 MediatR & CQRS
 Este proyecto utiliza MediatR para implementar el patrón CQRS. Las solicitudes se manejan como Comandos (para modificar datos) o Consultas (para recuperar datos). Esta práctica desacopla el envío de la solicitud de su manejo.
@@ -97,6 +128,9 @@ Paso 4: Consulta por una reserva y todas las de un salon
 
 <img width="1593" height="875" alt="image" src="https://github.com/user-attachments/assets/7925c127-ec7e-4608-b729-9483905cf316" />
 
+**Proyecto de Test:**
+
+<img width="1360" height="481" alt="image" src="https://github.com/user-attachments/assets/acbc620c-29e1-4adf-8259-344d9d2a2b19" />
 
 
 
