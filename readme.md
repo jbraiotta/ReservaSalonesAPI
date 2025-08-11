@@ -38,7 +38,7 @@ ReservaSalones.Infrastructure: Contiene la capa de acceso a datos (DbContext de 
 MediatR & CQRS
 Este proyecto utiliza MediatR para implementar el patrón CQRS. Las solicitudes se manejan como Comandos (para modificar datos) o Consultas (para recuperar datos). Esta práctica desacopla el envío de la solicitud de su manejo.
 
-**Comandos **
+**Comandos**
 * InsertReservaCommand: Se utiliza para generar reservas
 * GetAllReservaQuery: Se utiliza para obtener todas las reservas de un salón específico.
 * GetReservaQuery: Se utiliza para obtener una reserva en particular por fecha y hora.
