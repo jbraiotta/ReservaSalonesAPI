@@ -8,7 +8,7 @@ Clona el repositorio:
 
 Bash
 
-git clone [la-url-de-tu-repo]
+git clone https://github.com/jbraiotta/ReservaSalonesAPI.git
 Navega al directorio del proyecto:
 
 Bash
