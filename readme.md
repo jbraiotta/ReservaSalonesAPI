@@ -63,3 +63,38 @@ El proyecto incluye proyectos de prueba dedicados (.Tests) para validar la lógi
 
 **Documentación de API**
 La API está documentada con Swagger/OpenAPI. Los comentarios XML en los controladores y modelos de datos se utilizan para generar automáticamente una documentación detallada y fácil de usar, que se puede consultar en la interfaz de Swagger UI.
+
+**Middleware de la API**
+La API utiliza middleware personalizado para manejar la seguridad y el manejo global de errores, lo que mejora la robustez y la experiencia del desarrollador.
+
+ApiKeyAuthorizationMiddleware: Este middleware se encarga de la autenticación por clave de API. Todas las solicitudes deben incluir una clave de API válida en el encabezado para ser procesadas, proporcionando una capa de seguridad esencial.
+
+ErrorHandlingMiddleware: Captura las excepciones no controladas en toda la aplicación. En lugar de permitir que la API falle, este middleware devuelve una respuesta estandarizada y fácil de usar (500 Internal Server Error), lo que hace que la API sea más estable y predecible para los clientes.
+
+**Paso a Paso de Authenticación y pruebas**
+
+Paso 1: Autenticación en el appSettings hay una sección con el apikey para poder auntenticar (ver archivo).
+
+Paso 2: Colocar en swagger-> Authenticate el apikey
+<img width="1894" height="980" alt="image" src="https://github.com/user-attachments/assets/6f73e93b-f194-422d-b65b-43ab5f64fe66" />
+
+Paso 3: Crear Reserva
+
+Caso exitoso:
+<img width="1723" height="951" alt="image" src="https://github.com/user-attachments/assets/9fa918e9-8356-411a-b1ae-2decf6c1b573" />
+<img width="1841" height="1000" alt="image" src="https://github.com/user-attachments/assets/8e2c4d51-4903-456a-a217-bfae19642f6d" />
+<img width="1875" height="976" alt="image" src="https://github.com/user-attachments/assets/87527970-2c26-4f2b-8712-a008d34bee7b" />
+
+Caso error:
+<img width="1862" height="1022" alt="image" src="https://github.com/user-attachments/assets/20fd4903-60df-4df4-8bed-47aa45a38937" />
+<img width="1853" height="1041" alt="image" src="https://github.com/user-attachments/assets/d9a56922-3bc2-4c32-bb15-2228334ca69c" />
+
+Paso 4: Consulta por una reserva y todas las de un salon
+<img width="1714" height="979" alt="image" src="https://github.com/user-attachments/assets/9956fb02-70c6-4530-b0bd-cf8abf874596" />
+<img width="1593" height="875" alt="image" src="https://github.com/user-attachments/assets/7925c127-ec7e-4608-b729-9483905cf316" />
+
+
+
+
+
+
