@@ -82,16 +82,21 @@ Paso 3: Crear Reserva
 
 Caso exitoso:
 <img width="1723" height="951" alt="image" src="https://github.com/user-attachments/assets/9fa918e9-8356-411a-b1ae-2decf6c1b573" />
+
 <img width="1841" height="1000" alt="image" src="https://github.com/user-attachments/assets/8e2c4d51-4903-456a-a217-bfae19642f6d" />
+
 <img width="1875" height="976" alt="image" src="https://github.com/user-attachments/assets/87527970-2c26-4f2b-8712-a008d34bee7b" />
 
 Caso error:
 <img width="1862" height="1022" alt="image" src="https://github.com/user-attachments/assets/20fd4903-60df-4df4-8bed-47aa45a38937" />
+
 <img width="1853" height="1041" alt="image" src="https://github.com/user-attachments/assets/d9a56922-3bc2-4c32-bb15-2228334ca69c" />
 
 Paso 4: Consulta por una reserva y todas las de un salon
 <img width="1714" height="979" alt="image" src="https://github.com/user-attachments/assets/9956fb02-70c6-4530-b0bd-cf8abf874596" />
+
 <img width="1593" height="875" alt="image" src="https://github.com/user-attachments/assets/7925c127-ec7e-4608-b729-9483905cf316" />
+
 
 
 
